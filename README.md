@@ -22,7 +22,7 @@ Customers have the flexibility to purchase any quantity of these items, and they
 
 Customers have the option to hold one or more discount cards, with three distinct types available:
 
-**Pensioner Card** This card extends a 10% discount to pensioner customers on all the purchased items.
+**Pensioner Card:** This card extends a 10% discount to pensioner customers on all the purchased items.
 
 **Weekend Card:** Geared toward weekend shopping, the Weekend Card provides a 7.5% discount on all purchased items when used during the weekend, specifically on Saturday or Sunday.
 
