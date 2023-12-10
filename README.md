@@ -1,59 +1,93 @@
-# UNE-COSC100
-Programming Task 1
+# UNE COSC110 - Programming Task 1
 
 Welcome to the Codetown Grocery Store Self-Check-In System! This Python script allows users to perform self-check-in at the grocery store, register items, apply discount cards, and compute the total cost of their purchases.
 
-Getting Started
-To use the self-check-in system, follow these steps:
+## Description
 
-Password Entry:
+**STORE ITEMS**
+
+Codetown's grocery store is a small establishment offering a limited selection of just four items:
+
+**1. Apples:** priced at $5 per kilo
+
+**2. Bananas:** priced at $3 per kilo
+
+**3. Meat:** priced at $20 per kilo
+
+**4. Fish:** priced at $17 per kilo
+
+Customers have the flexibility to purchase any quantity of these items, and they can record their selections at the self-check-in register in any sequence.
+
+**DISCOUNT CARDS**
+
+Customers have the option to hold one or more discount cards, with three distinct types available:
+
+**Pensioner Card** This card extends a 10% discount to pensioner customers on all the purchased items.
+
+**Weekend Card:** Geared toward weekend shopping, the Weekend Card provides a 7.5% discount on all purchased items when used during the weekend, specifically on Saturday or Sunday.
+
+**Green Card:** Designed to promote a vegan lifestyle, the Green Card offers a 15% discount on apples and bananas. However, it comes with a trade-off as it adds a surcharge fee of 5% for both meat and fish.
+
+In the event that a customer possesses more than one of the aforementioned cards, the discounts or surcharge are applied in the following order: first, the discount of the pensioner card is applied, followed by the discount of the weekend card (if applicable given the entered day of the week), and finally the discount or surcharge of the green card (depending on the item purchased).
+## Getting Started
+
+To use the Codetown's self-check-in system, follow these steps:
+
+**1. Password Entry:**
 Enter the correct password to open the self-check-in register.
+The password 'Codetown' is case sensitive, the program will prompt the user to re-attempt the password entry until successful. 
 
-Day of the Week:
-Input the current day of the week when prompted. This is required for applying certain discounts.
+**2. Day of the Week:**
+Input the current day of the week when prompted, note that the day validation input is case-insensitive. This is required for applying certain discounts. For example, the Green Card discount will only be applied if the user enters the day as Saturday or Sunday. 
 
-Registering Items:
-Choose the option to register a new item and follow the prompts to enter the type of item and its weight.
+**3. Adding Discount Cards:**
+Choose option 1 from the Registration Menu to add a discount card if applicable. The system supports Pensioner, Weekend, and Green cards. Discount cards can only be applied once during the program in the following order: Pensioner, Weekend and lastly Green cards.
 
-Adding Discount Cards:
-Choose the option to add a discount card if applicable. The system supports Pensioner, Weekend, and Green cards.
+**4. Registering Items:**
+Choose option 2 from the Registration Menu to register a new item and follow the prompts to enter the type of item and its weight.
 
-Compute Total and Pay:
-Once all items are registered and the discount cards are applied, choose the option to compute the total cost. Follow the prompts to complete the payment process.
+**5.Compute Total and Pay:**
+Once all items are registered and the entered discount cards are applied, choose the option to compute the total cost. You will be prompted to press 'Enter' to complete the payment process.
 
-Closing the System:
-To close the self-check-in register, enter the password when prompted.
+**6. Closing the System:**
+To close the self-check-in register, enter the password when prompted. The password 'Codetown' is case sensitive, the program will prompt the user to re-attempt the password entry until successful. 
 
-Features
-Password Protection:
 
-The system is password-protected to ensure secure access.
+## Usage Instructions
 
-Discount Cards:
-Users can apply Pensioner, Weekend, and Green cards to avail relevant discounts.
+Run the script using a Python interpreter (I.e. Python 3.12.1)
 
-Item Registration:
-Users can register various items with their respective weights.
+```python
+python cashier.py
+```
+Follow the on-screen prompts to navigate through the self-check-in process and ensure you enter the correct password for both opening and closing the self check-in system.
+## Description
 
-Dynamic Pricing:
-The system calculates the total cost, applying applicable discounts and surcharges.
+**STORE ITEMS**
 
-Usage Instructions
-Run the script using a Python interpreter.
+Codetown's grocery store is a small establishment offering a limited selection of just four items:
 
-Copy code
-python grocery_store_system.py
-Follow the on-screen prompts to navigate through the self-check-in process.
+**1. Apples:** priced at $5 per kilo
 
-Ensure you enter the correct password for both opening and closing the system.
+**2. Bananas:** priced at $3 per kilo
 
-Important Note
-This system is for educational purposes and may require further enhancements for production use.
+**3. Meat:** priced at $20 per kilo
 
-Contributing
-If you'd like to contribute to the development of this self-check-in system, please follow the contribution guidelines.
+**4. Fish:** priced at $17 per kilo
 
-License
-This project is licensed under the MIT License.
+Customers have the flexibility to purchase any quantity of these items, and they can record their selections at the self-check-in register in any sequence.
 
-Feel free to customize this template to include any additional information or specifics about the usage of your self-check-in system.
+**DISCOUNT CARDS**
+
+Customers have the option to hold one or more discount cards, with three distinct types available:
+
+**Pensioner Card** This card extends a 10% discount to pensioner customers on all the purchased items.
+
+**Weekend Card:** Geared toward weekend shopping, the Weekend Card provides a 7.5% discount on all purchased items when used during the weekend, specifically on Saturday or Sunday.
+
+**Green Card:** Designed to promote a vegan lifestyle, the Green Card offers a 15% discount on apples and bananas. However, it comes with a trade-off as it adds a surcharge fee of 5% for both meat and fish.
+
+In the event that a customer possesses more than one of the aforementioned cards, the discounts or surcharge are applied in the following order: first, the discount of the pensioner card is applied, followed by the discount of the weekend card (if applicable given the entered day of the week), and finally the discount or surcharge of the green card (depending on the item purchased).
+## Important Note
+
+This Python script is only intended to be used for educational purposes and may require further enhancements for production use.
